@@ -32,6 +32,8 @@ public class CrazyLogger {
 
 
 
+
+
     public String find(String s) {
         int x=-1;
 

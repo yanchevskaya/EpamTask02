@@ -20,8 +20,8 @@ public class Language {
                    "4. The more you have of it, the less you see. What is it?\n" +
                    "5. What's black when you get it, red when you use it, and white when you're all through with it?");
            reader = new BufferedReader(new InputStreamReader(System.in));
-           int number = reader.read();
-            if (number>=1&&number<=5) {
+           int number = Integer.parseInt(reader.readLine());
+             if (number>=1&&number<=5) {
                 return englishLocale(Integer.toString(number));
             } else return "non correct number";
 
@@ -33,7 +33,7 @@ public class Language {
                    "4. Чем больше этого есть, тем меньше ты видишь. Что это?\n" +
                    "5. Что черное, когда ты его получаешь, красное, когда используешь и белое после?");
            reader = new BufferedReader(new InputStreamReader(System.in));
-           int number = reader.read();
+           int number = Integer.parseInt(reader.readLine());
 
            if (number>=1 && number<=5) {
                return russianLocale(Integer.toString(number));
