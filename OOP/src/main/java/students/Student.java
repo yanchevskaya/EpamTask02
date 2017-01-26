@@ -1,7 +1,5 @@
 package students;
 
-import javax.security.auth.*;
-
 /**
  * Created by Lisica on 19.01.2017.
  */

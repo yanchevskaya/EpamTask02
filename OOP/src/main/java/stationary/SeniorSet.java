@@ -1,10 +1,5 @@
 package stationary;
 
-import stationary.Corrector;
-import stationary.Folder;
-import stationary.MiddleSet;
-import stationary.Stationery;
-
 /**
  * Created by Lisica on 18.01.2017.
  */

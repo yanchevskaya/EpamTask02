@@ -1,10 +1,5 @@
 package stationary;
 
-import stationary.Calculator;
-import stationary.Clips;
-import stationary.Set;
-import stationary.Stationery;
-
 /**
  * Created by Lisica on 18.01.2017.
  */

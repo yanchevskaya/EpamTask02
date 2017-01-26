@@ -1,7 +1,5 @@
 package stationary;
 
-import stationary.Set;
-
 /**
  * Created by Lisica on 18.01.2017.
  */
