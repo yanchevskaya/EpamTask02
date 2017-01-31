@@ -1,4 +1,5 @@
 rootProject.name = 'lizhen'
 include 'OOP'
 include 'String'
+include 'Stream'
 
