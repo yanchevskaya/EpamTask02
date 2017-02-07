@@ -3,4 +3,5 @@ include 'OOP'
 include 'String'
 include 'Stream'
 include 'Exceptions'
+include 'Collections'
 
