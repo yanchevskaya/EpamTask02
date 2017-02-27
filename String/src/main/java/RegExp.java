@@ -77,8 +77,9 @@ public class RegExp {
         String reg1 = "[А-Яё[0-9]\"«»–\\s()а-я\\-,]+\\((Р|р)ис\\. [0-9]+\\)[ё[0-9]\"«»–\\s()а-я\\-,?!]+" +
                 "(\\((Р|р)ис\\.\\s?[0-9]+\\)[ё[0-9]\"«»–\\s()а-я\\-,]*)?[?!.]";
 
+        Pattern regExp = Pattern.compile(reg1, Pattern.CASE_INSENSITIVE);
 
-        Matcher picture = Pattern.compile(reg1).matcher(g);
+        Matcher picture = regExp.matcher(g);
 
         while (picture.find()) {
             System.out.println("Found '" + picture.group().trim() + "'");
