@@ -37,6 +37,12 @@ public class DataBase {
             pst.addBatch();
             pst.executeBatch();
 
+            DatabaseMetaData dbmd = connection.getMetaData();
+            rs = dbmd.getTables(null, null, null, new String[]
+                    {"TABLE"});
+            rs.next();
+            System.out.println(rs.getString(3));
+
 
             pst = connection.prepareStatement("select * from wonderland");
             rs = pst.executeQuery();

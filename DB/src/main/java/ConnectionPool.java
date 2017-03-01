@@ -24,11 +24,10 @@ public class ConnectionPool implements Supplier<Connection>, AutoCloseable{
     private static final String DB_PASSWORD = "db.password";
     private static final String DB_POOL_SIZE = "db.poolsize";
 
-    public ConnectionPool() {
+    public ConnectionPool(String dbResource) {
 
         Properties properties = new Properties();
-        try(FileInputStream fileInputStream = new FileInputStream(
-                "src/main/resources/db.properties")){
+        try(FileInputStream fileInputStream = new FileInputStream(dbResource)){
             properties.load(fileInputStream);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
@@ -67,10 +66,6 @@ public class ConnectionPool implements Supplier<Connection>, AutoCloseable{
             }
             }
         }
-
-    private void dispose(){
-        close();
-    }
 
     @Override
     public void close(){
